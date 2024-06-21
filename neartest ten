@@ -1,0 +1,34 @@
+Write a program to return the nearest 10 multiple of any given number
+
+Input Format
+
+Read a number
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print nearest 10 multiple no
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+         int n=s.nextInt();
+    int x=n%10;
+    if(x>=5)
+    {
+        System.out.printf("%d",n+(10-x));
+    }
+    else
+    {
+        System.out.printf("%d",n-x);
+}
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
