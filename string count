@@ -1,0 +1,39 @@
+import java.util.*;
+class Count
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+String s1=s.next();
+int a=0,u=0,l=0,d=0,r=0;
+for(int i=0;i<s1.length();i++)
+{
+char ch=s.next().charAt(0);
+if(Character.isLetter(ch))
+{
+a++;
+if(Character.isUpperCase(ch))
+{
+u++;
+}
+else
+{
+l++;
+}
+}
+else if(Character.isDigit(ch))
+{
+d++;
+}
+else
+{
+r++;
+}
+}
+System.out.println(a);
+System.out.println(u);
+System.out.println(l);
+System.out.println(d);
+System.out.println(r);
+}
+}
