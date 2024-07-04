@@ -1,0 +1,28 @@
+class Employee
+{
+	int eno;
+	String ename;
+	float salary;
+	void get(int a,String b,float c)
+	{
+		eno=a;
+		ename=b;
+		salary=c;
+	}
+	void show()
+	{
+		System.out.println(eno+" "+ename+" "+salary);
+	}
+}
+class Details
+{
+	public static void main(String[] args)
+	{
+		Employee e1=new Employee();
+		e1.get(1238,"Prasanna",100000);
+		Employee e2=new Employee();
+		e2.get(449,"Sai",2000000);
+		e1.show();
+		e2.show();
+	}
+}
